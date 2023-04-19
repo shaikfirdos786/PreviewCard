@@ -1,0 +1,118 @@
+body{
+    background-color: hsl(217, 54%, 11%);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex: 1;
+}
+
+.card{
+    width: 350px;
+    padding: 15px;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 15px;
+}
+
+.card-title{
+    color: white;
+    font-weight: 600;
+}
+
+.card-text{
+    color: hsl(215, 51%, 70%);
+}
+
+.carat{
+    color: hsl(178, 100%, 50%);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.time-left{
+    color: hsl(215, 51%, 70%);
+    padding-left: 85px;
+    font-size: 14px;
+}
+.icon{
+    padding-bottom: 5px;
+    padding-right: 5px;
+}
+
+hr{
+    border-top: 3px solid hsl(215, 32%, 27%);
+}
+
+.avatar{
+    border: 1px solid white;
+    width: 30px;
+    border-radius: 50%;
+    padding: 0;
+    margin: 0;
+}
+
+.creation{
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+.creator{
+    padding-left: 10px;
+    color: hsl(215, 51%, 70%);
+    font-size: 14px;
+}
+
+
+.card-title:hover{
+    color: hsl(178, 100%, 50%);
+}
+.effect:hover{
+    color: hsl(178, 100%, 50%);
+}
+
+.img-container {
+    position: relative;
+}
+
+.img-container:hover .overlay {
+    opacity: 1;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: hsla(178, 100%, 50%, .5);
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-container > img {
+    border-radius: 1.1rem;
+}
+
+
+
+@media (max-width: 600px) {
+
+    .card{
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 400px) {
+    .time-left{
+        padding-left: 30px;
+    }
+}
